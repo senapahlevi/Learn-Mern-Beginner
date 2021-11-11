@@ -1,0 +1,3 @@
+
+//ga bisa lebih dari 20mb json nya 
+app.use(bodyParser.json({limit:"20mb",}))
