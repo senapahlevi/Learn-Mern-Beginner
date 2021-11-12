@@ -9,8 +9,6 @@ import { getStudents, createStudents } from "../controllers/studentsControllers.
 import student from "../models/studentModels.js";
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.send("Router berhasil sena!!!!");
-});
+router.get("/", getStudents);
 
 export default router;

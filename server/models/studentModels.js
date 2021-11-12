@@ -1,14 +1,14 @@
-import { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 
 const studerntSchema = mongoose.Schema({
-  registerationNumber: Number,
-  name: String,
+  //sesuai kan di client ada kok sen sama BE dan FE harus sama
+  regisNo: Number,
+  studentName: String,
   grade: String,
   section: {
     type: String,
     default: "A",
   },
-  subjects: [String],
 });
 
 const student = mongoose.model("student", studerntSchema);
